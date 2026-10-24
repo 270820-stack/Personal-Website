@@ -1,0 +1,135 @@
+:root {
+  --ink: #1a1714;
+  --paper: #f4ebe0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: #ead9c6;
+  color: var(--ink);
+  font-family: Outfit, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#room {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.55s ease;
+}
+
+body.is-exploring #room {
+  opacity: 1;
+}
+
+.room-photo {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.55s ease;
+}
+
+body.is-exploring:not(.is-align) .room-photo {
+  opacity: 0;
+}
+
+body.is-align #room {
+  opacity: 1;
+}
+
+body.is-align .room-photo {
+  opacity: 0.38;
+  mix-blend-mode: multiply;
+}
+
+.hud {
+  position: fixed;
+  inset: 1.1rem 1.2rem auto;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  pointer-events: none;
+}
+
+.hud a,
+.hud button {
+  pointer-events: auto;
+}
+
+.hud__back,
+.hud__title,
+.hud__views button,
+.hud__hint {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hud__back {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.55;
+}
+
+.hud__back:hover {
+  opacity: 1;
+}
+
+.hud__title {
+  font-weight: 600;
+}
+
+.hud__views {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.2rem;
+  border-radius: 999px;
+  background: rgba(255, 249, 242, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.hud__views button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.hud__views button.is-active {
+  background: #1a1714;
+  color: #f6efe6;
+}
+
+.hud__hint {
+  position: fixed;
+  left: 50%;
+  bottom: 1.2rem;
+  z-index: 2;
+  transform: translateX(-50%);
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@media (max-width: 700px) {
+  .hud__hint {
+    display: none;
+  }
+}

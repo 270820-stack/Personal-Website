@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio — Charles Huang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="room.css?v=4" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body class="is-exploring">
+    <canvas id="room"></canvas>
+    <img
+      class="room-photo"
+      src="assets/studio-room-reference-v2.png"
+      alt="Studio room reference"
+      data-photo
+    />
+
+    <header class="hud">
+      <a class="hud__back" href="index.html">← site</a>
+      <p class="hud__title">Studio</p>
+      <div class="hud__views">
+        <button type="button" data-view="iso" class="is-active">plan</button>
+        <button type="button" data-view="inside">inside</button>
+        <button type="button" data-view="ref">ref</button>
+      </div>
+    </header>
+
+    <p class="hud__hint">Drag to look · ref to compare</p>
+
+    <script type="module" src="room.js?v=plants-ref1"></script>
+  </body>
+</html>

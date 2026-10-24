@@ -1,0 +1,16 @@
+export const palette = {
+  bg: 0xf3e0cc,
+  wall: 0xf6f1e8,
+  carpet: 0xc9b59a,
+  rug: 0xefe6d6,
+  oak: 0xcda56a,
+  sofa: 0x2c2c2e,
+  ink: 0x161616,
+  porcelain: 0xf5f2ec,
+  leaf: 0x3a6b3c,
+  pot: 0x0e0e0e,
+  window: 0xfffaf2,
+  fire: 0x0a0a0a,
+  birch: 0xe5d2b0,
+  lamp: 0xf4deca,
+};
