@@ -94,6 +94,7 @@ const works = {
     title: "A photo app, prototyped.",
     body: "Three-person team, three weeks, Adobe. Competitor research, UI/UX, marketing, and a photo-editing app prototype — with feedback from Adobe staff.",
     role: "Product design intern.",
+    images: [["assets/works/adobe-1.jpg", "Adobe photo-editing app prototype showing Pro AI, Templates, and Recents screens"]],
   },
   nostalgia: {
     kicker: "30 × 40 cm · acrylic on wood panel, digital collage",
