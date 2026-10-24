@@ -884,3 +884,13 @@ body.is-overlay .nav {
 .overlay__credit[hidden] {
   display: none;
 }
+
+/* Give email links a clear native click affordance. */
+a[href^="mailto:"] {
+  cursor: pointer;
+}
+
+a[href^="mailto:"]:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
