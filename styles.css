@@ -862,3 +862,25 @@ body.is-overlay .nav {
     transition: none;
   }
 }
+
+/* Keep official artwork and journal branding legible in the experience grid. */
+.tile__media--contain {
+  background: #eeece6;
+}
+
+.tile__media--contain img {
+  object-fit: contain;
+}
+
+.overlay__credit {
+  display: block;
+  margin-top: 14px;
+  font-size: 12px;
+  line-height: 1.6;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.overlay__credit[hidden] {
+  display: none;
+}

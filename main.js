@@ -21,12 +21,20 @@ const works = {
     title: "Stone made public.",
     body: "Marketing for a national second-grade museum: 407 artifacts across nine dynasties. Twelve Instagram posts — graphic design and visual storytelling as a weekly practice.",
     role: "Digital content coordinator.",
+    link: "http://www.goldstonemuseum.org.cn/",
+    images: [["assets/works/goldstone-1.jpg", "Goldstone Museum gallery with stone reliefs"]],
+    imageCredit: "Gallery image: Goldstone Museum · official website",
+    imageSource: "http://www.goldstonemuseum.org.cn/",
   },
   opera: {
     kicker: "Opera Hong Kong · 2025.04 — 2025.05",
     title: "Opera that travels.",
-    body: "Mascot and poster design for Pandalistic Life. The work moved from a single drawing into tickets, brochure, and merchandise.",
+    body: "Mascot and poster design for A Pandastic Life. The work moved from a single drawing into tickets, brochure, and merchandise.",
     role: "Designer — mascot and posters.",
+    link: "https://operahongkong.org/a-pandastic-life/",
+    images: [["assets/works/opera-1.jpg", "A Pandastic Life official artwork with a panda riding a Hong Kong tram"]],
+    imageCredit: "Official artwork: Opera Hong Kong",
+    imageSource: "https://operahongkong.org/a-pandastic-life/",
   },
   butterfly: {
     kicker: "Butterfly Lovers · 2026.01 — 2026.03",
@@ -40,6 +48,10 @@ const works = {
     title: "The scan as a sense.",
     body: "CAMLab workflow, 3D scanning, and sensory making. Interviews with art-history and drama professors became short films about careers and majors — more than 40,000 views across WeChat, Rednote, and Bilibili.",
     role: "Student · interviewer · editor.",
+    link: "https://camlab.fas.harvard.edu/",
+    images: [["assets/works/camlab-1.jpg", "Cave Dance immersive installation at Harvard CAMLab"]],
+    imageCredit: "Cave Dance · photo by Charles Mayer, courtesy of Harvard CAMLab",
+    imageSource: "https://camlab.fas.harvard.edu/camlab-cave/",
   },
   weave: {
     kicker: "UNESCO Youth Platform · grades 10–11",
@@ -59,6 +71,10 @@ const works = {
     title: "Baroque to neogothic.",
     body: "A 6,500-word paper on the Baroque-to-neogothic transition in Chinese architecture, 1600s to 1900s. Compared art and politics across two Jesuit missions; synthesized 17 sources. Forthcoming in Curieux Journal, November 2026.",
     role: "Researcher of Catholic art in colonial China.",
+    link: "https://www.curieuxacademicjournal.com/",
+    images: [["assets/works/curieux-1.jpg", "Curieux Academic Journal book emblem and wordmark"]],
+    imageCredit: "Journal logo: Curieux Academic Journal",
+    imageSource: "https://www.curieuxacademicjournal.com/",
   },
   code: {
     kicker: "Coding · JavaScript, Python, C++",
@@ -181,6 +197,7 @@ const overlayBody = document.querySelector("[data-overlay-body]");
 const overlayRole = document.querySelector("[data-overlay-role]");
 const overlayThumbs = document.querySelector("[data-overlay-thumbs]");
 const overlayLink = document.querySelector("[data-overlay-link]");
+const overlayCredit = document.querySelector("[data-overlay-credit]");
 const cursor = document.querySelector(".cursor");
 const clock = document.querySelector("[data-clock]");
 
@@ -284,6 +301,10 @@ function openWork(id) {
     overlayImage.hidden = true;
     overlayEmpty.hidden = false;
   }
+  overlayCredit.hidden = !work.imageCredit;
+  overlayCredit.textContent = work.imageCredit || "";
+  if (work.imageSource) overlayCredit.href = work.imageSource;
+  else overlayCredit.removeAttribute("href");
   overlayKicker.textContent = work.kicker;
   overlayTitle.textContent = work.title;
   overlayBody.textContent = work.body;
