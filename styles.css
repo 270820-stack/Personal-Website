@@ -161,9 +161,18 @@ body.is-hovering .cursor__dot {
   pointer-events: none;
 }
 
-.nav__logo,
-.nav__links {
-  mix-blend-mode: difference;
+.nav[data-theme="light"] {
+  color: #000;
+}
+
+.nav[data-theme="light"] .pill--nav {
+  background: #000;
+  color: #fff;
+}
+
+.nav[data-theme="light"] .pill--nav .pill__arrow {
+  background: #fff;
+  color: #000;
 }
 
 body.is-ready .nav {

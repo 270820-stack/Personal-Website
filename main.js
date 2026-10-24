@@ -362,6 +362,33 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
+
+const navigation = document.querySelector("[data-nav]");
+const navigationSections = [...document.querySelectorAll("[data-nav-theme]")];
+let navigationUpdatePending = false;
+
+function updateNavigationTheme() {
+  navigationUpdatePending = false;
+  const navBounds = navigation.getBoundingClientRect();
+  const sampleY = navBounds.top + navBounds.height / 2;
+  const section = navigationSections.find((section) => {
+    const bounds = section.getBoundingClientRect();
+    return bounds.top <= sampleY && bounds.bottom > sampleY;
+  });
+  if (section) navigation.dataset.theme = section.dataset.navTheme;
+}
+
+function scheduleNavigationTheme() {
+  if (navigationUpdatePending) return;
+  navigationUpdatePending = true;
+  requestAnimationFrame(updateNavigationTheme);
+}
+
+window.addEventListener("scroll", scheduleNavigationTheme, { passive: true });
+window.addEventListener("resize", scheduleNavigationTheme);
+window.addEventListener("load", scheduleNavigationTheme);
+updateNavigationTheme();
+
 window.addEventListener("pointermove", moveCursor);
 updateClock();
 setInterval(updateClock, 1000);
