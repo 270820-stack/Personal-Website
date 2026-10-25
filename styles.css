@@ -936,12 +936,13 @@ a[href^="mailto:"]:focus-visible {
 
 .journey__photos {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
 .journey__photos img {
-  height: clamp(16rem, 26vw, 28rem);
+  height: clamp(16rem, 34vw, 32rem);
+  object-fit: contain;
   border-radius: 2px;
 }
 
