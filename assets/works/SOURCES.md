@@ -16,3 +16,12 @@ The supplied [Canva design](https://canva.link/7wsmsosyspluq05) redirected to si
 ## Adobe prototype
 
 `adobe-1.jpg` and `t/adobe-1.jpg` come from the screenshot supplied by Charles Huang on October 24, 2026. The image shows the Pro AI, Templates, and Recents screens of the photo-editing app prototype. The complete screenshot is preserved without cropping; the thumbnail is resized to 800 pixels wide.
+
+## Activity and hobby uploads — October 25, 2026
+
+- `../hero-2982.jpg`: supplied `IMG_2982.HEIC`, used as the banner photograph.
+- `content-9337.jpg` and its thumbnail: supplied `IMG_9337.jpg`, first in Content creation. The existing CAMLab photograph remains second, with its credit displayed only when that image is selected.
+- `../hobbies/cricket-1.jpg` through `cricket-4.jpg` and their thumbnails: supplied `IMG_9501.HEIC`, `IMG_9499.HEIC`, `IMG_9498.HEIC`, and `IMG_9500.HEIC`, respectively.
+- `../hobbies/guitar-1.jpg` and its thumbnail: supplied guitar screenshot dated October 25, 2026.
+
+Experience cards follow the relative order in `Activities.rtf`, with art and hobbies retained in their dedicated sections. UN HLPF follows Memory Project; the two marketing projects are appended as cards 9 and 10 at the owner's request.

@@ -28,7 +28,7 @@ const works = {
   },
   opera: {
     kicker: "Opera Hong Kong · 2025.04 — 2025.05",
-    title: "Opera that travels.",
+    title: "A Pandalistic Life - Marketing",
     body: "Mascot and poster design for A Pandastic Life. The work moved from a single drawing into tickets, brochure, and merchandise.",
     role: "Designer — mascot and posters.",
     link: "https://operahongkong.org/a-pandastic-life/",
@@ -38,20 +38,25 @@ const works = {
   },
   butterfly: {
     kicker: "Butterfly Lovers · 2026.01 — 2026.03",
-    title: "A legend, restaged.",
+    title: "Butterfly Lovers - Marketing",
     body: "Mascot and posters for The Legend of Butterfly Lovers piano and violin concerto — Witkowski Piano Duo with violinist Siqing Lu, Jockey Club Auditorium, Hong Kong Palace Museum, March 15, 2026. The same marks used on tickets, brochure, and props.",
     role: "Designer — mascot and posters.",
     images: [["assets/works/butterfly-1.jpg", "Butterfly Lovers concert poster: blue butterflies, 梁祝, and the performers"]],
   },
   camlab: {
-    kicker: "Harvard CAMLab · career research",
-    title: "The scan as a sense.",
+    kicker: "Content creation · career research",
+    title: "Content creation",
     body: "CAMLab workflow, 3D scanning, and sensory making. Interviews with art-history and drama professors became short films about careers and majors — more than 40,000 views across WeChat, Rednote, and Bilibili.",
     role: "Student · interviewer · editor.",
     link: "https://camlab.fas.harvard.edu/",
-    images: [["assets/works/camlab-1.jpg", "Cave Dance immersive installation at Harvard CAMLab"]],
-    imageCredit: "Cave Dance · photo by Charles Mayer, courtesy of Harvard CAMLab",
-    imageSource: "https://camlab.fas.harvard.edu/camlab-cave/",
+    images: [
+      ["assets/works/content-9337.jpg", "Social media profile with career and arts interview videos"],
+      ["assets/works/camlab-1.jpg", "Cave Dance immersive installation at Harvard CAMLab"],
+    ],
+    imageCredits: [
+      ["", ""],
+      ["Cave Dance · photo by Charles Mayer, courtesy of Harvard CAMLab", "https://camlab.fas.harvard.edu/camlab-cave/"],
+    ],
   },
   weave: {
     kicker: "UNESCO Youth Platform · grades 10–11",
@@ -95,6 +100,23 @@ const works = {
     body: "Three-person team, three weeks, Adobe. Competitor research, UI/UX, marketing, and a photo-editing app prototype — with feedback from Adobe staff.",
     role: "Product design intern.",
     images: [["assets/works/adobe-1.jpg", "Adobe photo-editing app prototype showing Pro AI, Templates, and Recents screens"]],
+  },
+  guitar: {
+    kicker: "Classical guitar",
+    title: "Classical guitar",
+    body: "Studied classical guitar for six years. ABRSM Grade 5 and Trinity Grade 7, preparing for Grade 8. Performed in the Hong Kong Schools Music Festival senior division.",
+    images: [["assets/hobbies/guitar-1.jpg", "Playing classical guitar"]],
+  },
+  cricket: {
+    kicker: "Hong Kong Cricket Club",
+    title: "Cricket",
+    body: "Cricket matches and training at Hong Kong Cricket Club — building athletic skills and teamwork.",
+    images: [
+      ["assets/hobbies/cricket-1.jpg", "Practising batting in indoor cricket nets"],
+      ["assets/hobbies/cricket-2.jpg", "In cricket kit beside the practice nets"],
+      ["assets/hobbies/cricket-3.jpg", "Cricket training inside the nets"],
+      ["assets/hobbies/cricket-4.jpg", "Batting practice at Hong Kong Cricket Club"],
+    ],
   },
   nostalgia: {
     kicker: "30 × 40 cm · acrylic on wood panel, digital collage",
@@ -260,6 +282,7 @@ function setHoverState(on) {
 }
 
 let currentImages = [];
+let currentImageCredits = [];
 let currentIndex = 0;
 
 function showImage(index) {
@@ -268,6 +291,11 @@ function showImage(index) {
   const [src, alt] = currentImages[currentIndex];
   overlayImage.src = src;
   overlayImage.alt = alt;
+  const [credit, source] = currentImageCredits[currentIndex] || [];
+  overlayCredit.hidden = !credit;
+  overlayCredit.textContent = credit || "";
+  if (source) overlayCredit.href = source;
+  else overlayCredit.removeAttribute("href");
   overlayThumbs.querySelectorAll("button").forEach((thumb, i) => {
     thumb.classList.toggle("is-active", i === currentIndex);
   });
@@ -278,6 +306,10 @@ function openWork(id) {
   if (!work) return;
 
   currentImages = work.images || [];
+  currentImageCredits = work.imageCredits || currentImages.map(() => [work.imageCredit, work.imageSource]);
+  overlayCredit.hidden = true;
+  overlayCredit.textContent = "";
+  overlayCredit.removeAttribute("href");
   overlayThumbs.replaceChildren(
     ...(currentImages.length > 1 ? currentImages : []).map(([src, alt], i) => {
       const thumb = document.createElement("button");
@@ -302,10 +334,6 @@ function openWork(id) {
     overlayImage.hidden = true;
     overlayEmpty.hidden = false;
   }
-  overlayCredit.hidden = !work.imageCredit;
-  overlayCredit.textContent = work.imageCredit || "";
-  if (work.imageSource) overlayCredit.href = work.imageSource;
-  else overlayCredit.removeAttribute("href");
   overlayKicker.textContent = work.kicker;
   overlayTitle.textContent = work.title;
   overlayBody.textContent = work.body;
