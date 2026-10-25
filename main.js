@@ -101,6 +101,18 @@ const works = {
     role: "Product design intern.",
     images: [["assets/works/adobe-1.jpg", "Adobe photo-editing app prototype showing Pro AI, Templates, and Recents screens"]],
   },
+  snowboarding: {
+    kicker: "Snowboarding",
+    title: "Snowboarding",
+    body: "Five seasons of snowboarding. JSBA Grade 2.",
+    images: [["assets/hobbies/snowboarding-1.jpg", "Snowboarding in the mountains in a helmet and goggles"]],
+  },
+  badminton: {
+    kicker: "Badminton",
+    title: "Badminton",
+    body: "Four years of playing badminton.",
+    images: [["assets/hobbies/badminton-1.jpg", "Playing badminton on an indoor court"]],
+  },
   guitar: {
     kicker: "Classical guitar",
     title: "Classical guitar",

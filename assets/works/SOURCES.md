@@ -31,3 +31,7 @@ Experience cards follow the relative order in `Activities.rtf`, with art and hob
 The Journey photographs were supplied by the owner in Downloads: `IMG_8782.JPG`, `IMG_8082.jpg`, and `artlooking.JPG`. Optimized, orientation-corrected copies are stored in `../journey/`. Journey text, including 11 years as an artist, 90 paintings sold to benefit the Adream Foundation, 90 Instagram followers, an online exhibit for 100 people, and five commissions totaling $30,000, follows the owner's description.
 
 The Journey gallery also includes `IMG_3629.JPG` from Downloads, verified to carry the Finder Yellow tag. `../journey/journey-3629.jpg` preserves the full 2017 charity art exhibition poster.
+
+## Snowboarding and badminton — October 25, 2026
+
+`../hobbies/snowboarding-1.jpg` and its thumbnail are from the supplied `uploads/IMG_3755.heic`. `../hobbies/badminton-1.jpg` and its thumbnail are from `uploads/IMG_5564.jpg`. Full images are available through the hobby cards.
