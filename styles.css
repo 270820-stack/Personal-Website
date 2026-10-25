@@ -903,3 +903,72 @@ a[href^="mailto:"]:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
 }
+
+.journey {
+  padding: 12vh var(--pad);
+  background: #f3f1eb;
+  color: var(--ink);
+}
+
+.journey__intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 6rem);
+  margin: 3rem 0 4rem;
+}
+
+.journey__lede {
+  font-size: clamp(1.8rem, 3.5vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.journey__story {
+  max-width: 38rem;
+  font-size: 1.12rem;
+  line-height: 1.6;
+}
+
+.journey__story p + p {
+  margin-top: 1.2rem;
+}
+
+.journey__photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.journey__photos img {
+  height: clamp(16rem, 26vw, 28rem);
+  border-radius: 2px;
+}
+
+.journey__photos .journey__portrait {
+  object-fit: contain;
+}
+
+.journey__photos figcaption {
+  margin-top: 0.85rem;
+  color: var(--mute);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .journey__intro,
+  .journey__photos {
+    grid-template-columns: 1fr;
+  }
+
+  .journey__photos {
+    gap: 2rem;
+  }
+
+  .journey__photos img {
+    height: auto;
+    max-height: 34rem;
+    object-fit: contain;
+  }
+}

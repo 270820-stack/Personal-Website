@@ -25,3 +25,7 @@ The supplied [Canva design](https://canva.link/7wsmsosyspluq05) redirected to si
 - `../hobbies/guitar-1.jpg` and its thumbnail: supplied guitar screenshot dated October 25, 2026.
 
 Experience cards follow the relative order in `Activities.rtf`, with art and hobbies retained in their dedicated sections. UN HLPF follows Memory Project; the two marketing projects are appended as cards 9 and 10 at the owner's request.
+
+## Journey — October 25, 2026
+
+The Journey photographs were supplied by the owner in Downloads: `IMG_8782.JPG`, `IMG_8082.jpg`, and `artlooking.JPG`. Optimized, orientation-corrected copies are stored in `../journey/`. Journey text, including 11 years as an artist, 90 paintings sold to benefit the Adream Foundation, 90 Instagram followers, an online exhibit for 100 people, and five commissions totaling $30,000, follows the owner's description.
