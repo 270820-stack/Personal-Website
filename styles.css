@@ -973,3 +973,57 @@ a[href^="mailto:"]:focus-visible {
     object-fit: contain;
   }
 }
+
+.nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.profile__copy {
+  max-width: 50rem;
+  margin-top: 3rem;
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  line-height: 1.65;
+}
+
+.profile__copy p + p {
+  margin-top: 1.4rem;
+}
+
+.profile__copy .pill {
+  margin-top: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+  }
+
+  .nav__links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__actions {
+    gap: 0.35rem;
+  }
+
+  .nav__actions .pill--nav {
+    min-height: 2.1rem;
+    padding-left: 0.6rem;
+    gap: 0.4rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.02em;
+  }
+
+  .nav__actions .pill__arrow {
+    width: 1.65rem;
+    height: 1.65rem;
+  }
+}

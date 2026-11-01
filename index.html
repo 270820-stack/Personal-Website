@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23000'/><text x='16' y='22' text-anchor='middle' font-family='Arial' font-size='16' fill='%23fff'>C</text></svg>" />
-    <link rel="stylesheet" href="styles.css?v=journey-1" />
+    <link rel="stylesheet" href="styles.css?v=resume-1" />
   </head>
   <body>
     <div class="cursor" aria-hidden="true">
@@ -33,16 +33,22 @@
     <header class="nav" data-nav>
       <a class="nav__logo" href="#top">C</a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#education">education</a>
+        <a href="#education">about</a>
         <a href="#experiences">experiences</a>
         <a href="#art">art</a>
         <a href="#hobbies">hobbies</a>
         <a href="#contact">contact</a>
       </nav>
-      <a class="pill pill--nav" href="#contact">
-        write to me
-        <span class="pill__arrow" aria-hidden="true">→</span>
-      </a>
+      <div class="nav__actions">
+        <a class="pill pill--nav" href="#contact">
+          write to me
+          <span class="pill__arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="pill pill--nav" href="assets/Charles-Huang-Resume.pdf" download="Charles-Huang-Resume.pdf">
+          download resume
+          <span class="pill__arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
     </header>
 
     <main id="top">
@@ -63,73 +69,17 @@
         </div>
       </section>
 
-      <section class="education" data-nav-theme="light" id="education">
-        <p class="eyebrow">Education &amp; academics</p>
-        <h2 class="display">
-          Hong Kong<br />
-          International School
-        </h2>
-        <p class="education__sub">High School · 2021.09 — 2027.06</p>
-
-        <div class="education__stats">
-          <div>
-            <p class="education__num">3.798</p>
-            <p class="eyebrow">Cumulative GPA</p>
-          </div>
-          <div>
-            <p class="education__num">4.0</p>
-            <p class="eyebrow">Senior year</p>
-          </div>
-          <div>
-            <p class="education__num">1550</p>
-            <p class="eyebrow">SAT</p>
-          </div>
-          <div>
-            <p class="education__num">9</p>
-            <p class="eyebrow">AP courses</p>
-          </div>
-        </div>
-
-        <div class="education__grid">
-          <div>
-            <p class="eyebrow">Courses</p>
-            <ul class="education__courses">
-              <li>AP Art History</li>
-              <li>AP Studio Art</li>
-              <li>AP European History</li>
-              <li>AP U.S. History</li>
-              <li>AP Language and Composition</li>
-              <li>AP Chemistry</li>
-              <li>AP Biology</li>
-              <li>AP Physics 1</li>
-              <li>AP Calculus AB</li>
-            </ul>
-          </div>
-          <div>
-            <p class="eyebrow">Programs</p>
-            <ul class="education__programs">
-              <li>
-                <span>2026.06 — 07</span>
-                <strong>Carnegie Mellon Visual Art Summer Program</strong>
-                <em>Animation, sculpture, concept, and drawing — through technique and the context of artworks.</em>
-              </li>
-              <li>
-                <span>2026.01 — 03</span>
-                <strong>Cornell Winter School, Greek &amp; Roman Art</strong>
-                <em>ARTH 2200: Introduction to the Classical World in 24 Objects.</em>
-              </li>
-              <li>
-                <span>2025.06 — 07</span>
-                <strong>Sotheby’s Art History Summer Program</strong>
-                <em>Curation and appreciation through research projects and museum visits.</em>
-              </li>
-              <li>
-                <span>2025.06</span>
-                <strong>Harvard CAMLab</strong>
-                <em>CAMLab workflow, 3D scanning, and building a sensory experience with research and 3D tools.</em>
-              </li>
-            </ul>
-          </div>
+      <section class="education education--profile" data-nav-theme="light" id="education" aria-labelledby="about-title">
+        <p class="eyebrow">About me</p>
+        <h2 class="display" id="about-title">Art, history,<br />and culture.</h2>
+        <div class="profile__copy">
+          <p>I’m a student at Hong Kong International School with more than a decade of visual-arts practice in painting, drawing, and woodblock printing. My work brings together cultural research, graphic design, video editing, and skills in Python, C++, and UI/UX. I’m interested in how aesthetics and technology can help us share and preserve culture.</p>
+          <p>Fluent in English, Mandarin, and Cantonese, I value clear organization and collaboration. I’ve led art-education projects, coordinated student portrait-making teams, and created visual content for Goldstone Museum. I’ve also interviewed professors and produced short videos about their careers for WeChat, Rednote, and Bilibili.</p>
+          <p>Based in Hong Kong, I explore art and history through research, exhibitions, and digital media. From Weave-a-World’s cultural dyes and textiles to a photo-editing app prototype developed with a team at Adobe, I aim to combine visual craft and technical skills to help more people experience and appreciate culture.</p>
+          <a class="pill" href="assets/Charles-Huang-Resume.pdf" target="_blank" rel="noopener">
+            View resume
+            <span class="pill__arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
 
