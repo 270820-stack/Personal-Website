@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23000'/><text x='16' y='22' text-anchor='middle' font-family='Arial' font-size='16' fill='%23fff'>C</text></svg>" />
-    <link rel="stylesheet" href="styles.css?v=resume-1" />
+    <link rel="stylesheet" href="styles.css?v=other-works-1" />
   </head>
   <body>
     <div class="cursor" aria-hidden="true">
@@ -72,6 +72,7 @@
       <section class="education education--profile" data-nav-theme="light" id="education" aria-labelledby="about-title">
         <p class="eyebrow">About me</p>
         <h2 class="display" id="about-title">Art, history,<br />and culture.</h2>
+        <div class="profile__layout">
         <div class="profile__copy">
           <p>I’m a student at Hong Kong International School with more than a decade of visual-arts practice in painting, drawing, and woodblock printing. My work brings together cultural research, graphic design, video editing, and skills in Python, C++, and UI/UX. I’m interested in how aesthetics and technology can help us share and preserve culture.</p>
           <p>Fluent in English, Mandarin, and Cantonese, I value clear organization and collaboration. I’ve led art-education projects, coordinated student portrait-making teams, and created visual content for Goldstone Museum. I’ve also interviewed professors and produced short videos about their careers for WeChat, Rednote, and Bilibili.</p>
@@ -80,6 +81,8 @@
             View resume
             <span class="pill__arrow" aria-hidden="true">↗</span>
           </a>
+        </div>
+          <img class="profile__portrait" src="assets/profile-8791.jpg" alt="Charles Huang overlooking the United Nations General Assembly hall" loading="lazy" />
         </div>
       </section>
 
@@ -212,6 +215,49 @@
         </div>
       </section>
 
+      <section class="other-works" data-nav-theme="light" id="other-works" aria-labelledby="other-works-title">
+        <p class="eyebrow">Design, illustration &amp; more</p>
+        <h2 class="display" id="other-works-title">Other works</h2>
+        <div class="gallery gallery--other">
+          <button class="tile" type="button" data-open="cardboard">
+            <span class="tile__media tile__media--contain"><img src="assets/other/t/cardboard.jpg" alt="A cardboard creature sculpture worn over the head" loading="lazy" /></span>
+            <span class="tile__cap"><strong>Cardboard Sculpture</strong><em>sculpture</em></span>
+          </button>
+          <button class="tile" type="button" data-open="cat-figure">
+            <span class="tile__media tile__media--contain"><img src="assets/other/t/cat-figure.jpg" alt="A black cat towering over a cloaked figure" loading="lazy" /></span>
+            <span class="tile__cap"><strong>Cat and Figure</strong><em>artwork</em></span>
+          </button>
+          <button class="tile" type="button" data-open="earth">
+            <span class="tile__media tile__media--contain"><img src="assets/other/t/earth.jpg" alt="A brightly colored stag against a cityscape" loading="lazy" /></span>
+            <span class="tile__cap"><strong>大地</strong><em>artwork</em></span>
+          </button>
+          <button class="tile" type="button" data-open="prosperity">
+            <span class="tile__media tile__media--contain"><img src="assets/other/t/prosperity.jpg" alt="Red and white koi swimming through a teal cityscape" loading="lazy" /></span>
+            <span class="tile__cap"><strong>Where Prosperity Flows</strong><em>painting</em></span>
+          </button>
+          <button class="tile" type="button" data-open="bridge">
+            <span class="tile__media tile__media--contain"><img src="assets/other/t/bridge.jpg" alt="Typographic Bridge Over Troubled Water poster with a lotus and rippling reflections" loading="lazy" /></span>
+            <span class="tile__cap"><strong>Bridge Over Troubled Water</strong><em>poster design</em></span>
+          </button>
+          <button class="tile" type="button" data-open="horse">
+            <span class="tile__media tile__media--contain"><img src="assets/other/t/horse.jpg" alt="Year of the Horse poster with a stylized horse and a gold coin" loading="lazy" /></span>
+            <span class="tile__cap"><strong>Year of the Horse</strong><em>poster design</em></span>
+          </button>
+          <button class="tile" type="button" data-open="zao">
+            <span class="tile__media tile__media--contain"><img src="assets/other/t/zao-01.jpg" alt="ZAO Snowboards cover" loading="lazy" /></span>
+            <span class="tile__cap"><strong>ZAO Snowboards</strong><em>PDF · 13 pages</em></span>
+          </button>
+          <button class="tile" type="button" data-open="myzine">
+            <span class="tile__media tile__media--contain"><img src="assets/other/t/myzine-01.jpg" alt="MYZINE cover" loading="lazy" /></span>
+            <span class="tile__cap"><strong>MYZINE</strong><em>PDF · 8 pages</em></span>
+          </button>
+          <button class="tile" type="button" data-open="chuan-cover">
+            <span class="tile__media tile__media--contain"><img src="assets/other/t/chuan-cover.jpg" alt="Chuan Long magazine cover with red waves, a green vase, and white orchids" loading="lazy" /></span>
+            <span class="tile__cap"><strong>Chuan Long</strong><em>magazine design · 2</em></span>
+          </button>
+        </div>
+      </section>
+
       <section class="journey" data-nav-theme="light" id="journey" aria-labelledby="journey-title">
         <p class="eyebrow">My art journey</p>
         <h2 class="display" id="journey-title">Journey</h2>
@@ -263,6 +309,10 @@
             <span class="tile__media"><img src="assets/hobbies/t/badminton-1.jpg" alt="Playing badminton on an indoor court" loading="lazy" /></span>
             <span class="tile__cap"><strong>Badminton</strong><em>four years</em></span>
           </button>
+          <article class="tile tile--static">
+            <span class="tile__media tile__media--choir"><span aria-hidden="true">♪</span></span>
+            <span class="tile__cap"><strong>Choir</strong><em>singing</em></span>
+          </article>
         </div>
       </section>
     </main>
@@ -314,6 +364,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script src="main.js?v=journey-1"></script>
+    <script src="main.js?v=other-works-1"></script>
   </body>
 </html>

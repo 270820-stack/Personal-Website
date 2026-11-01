@@ -35,3 +35,14 @@ The Journey gallery also includes `IMG_3629.JPG` from Downloads, verified to car
 ## Snowboarding and badminton — October 25, 2026
 
 `../hobbies/snowboarding-1.jpg` and its thumbnail are from the supplied `uploads/IMG_3755.heic`. `../hobbies/badminton-1.jpg` and its thumbnail are from `uploads/IMG_5564.jpg`. Full images are available through the hobby cards.
+
+## Profile, UN HLPF, and Other works — November 2, 2026
+
+- `../profile-8791.jpg`: owner-supplied `IMG_8791.HEIC` from Downloads.
+- `forum-8826.jpg`: owner-supplied `IMG_8826.HEIC`, added to the existing UN HLPF gallery.
+- `../other/cardboard.jpg`, `cat-figure.jpg`, `earth.jpg`, and `prosperity.jpg`: owner-selected `57CCA522-3381-4279-B3F1-7FCC49986C1D.JPG`, `full.png`, `黃澤韜-17-大地.jpeg`, and `Where_Prosperity_Flows.png`. The prosperity source contains HEIC data despite its PNG extension; it was converted to JPEG for browser support.
+- `../other/bridge.jpg` and `horse.jpg`: attached bridge poster screenshot and `Year_of_The_Horse_FINAL.png`.
+- `../other/chuan-cover.jpg` and `chuan-second.jpg`: the paired red Chuan Long magazine designs. The last attached image (12.51.46 AM) is the card cover and the first image in the gallery; the other red design follows it.
+- `../other/zao.pdf` and `myzine.pdf`: unchanged copies of the attached `ZAO SNOWBOARDS FINAL.pdf` (13 pages) and `MYZINE.pdf` (8 pages). JPEG page previews and thumbnails accompany both; the complete PDFs are linked from their detail views.
+
+Other works uses descriptive display labels where the owner did not provide a title. Choir was added as a hobby with a typographic music symbol; no unprovided performance details were added.

@@ -983,7 +983,7 @@ a[href^="mailto:"]:focus-visible {
 .profile__copy {
   max-width: 50rem;
   margin-top: 3rem;
-  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  font-size: clamp(1rem, 1.25vw, 1.1rem);
   line-height: 1.65;
 }
 
@@ -1025,5 +1025,75 @@ a[href^="mailto:"]:focus-visible {
   .nav__actions .pill__arrow {
     width: 1.65rem;
     height: 1.65rem;
+  }
+}
+
+.profile__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-top: 3rem;
+}
+
+.profile__layout .profile__copy {
+  margin-top: 0;
+}
+
+.profile__portrait {
+  aspect-ratio: 3 / 4;
+  height: auto;
+  max-height: 38rem;
+  object-position: center top;
+  border-radius: 2px;
+}
+
+.other-works {
+  padding: 0 var(--pad) 14vh;
+}
+
+.other-works .display {
+  margin-bottom: 5vh;
+}
+
+.gallery--other {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gallery--other .tile__media {
+  aspect-ratio: 3 / 4;
+}
+
+.gallery--hobbies {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.tile__media--choir {
+  display: grid;
+  place-items: center;
+  background: #eeece6;
+  color: #37352e;
+  font-family: Georgia, serif;
+  font-size: clamp(4rem, 9vw, 9rem);
+}
+
+@media (max-width: 1100px) {
+  .gallery--other {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery--other,
+  .gallery--hobbies {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile__portrait {
+    max-width: 28rem;
   }
 }

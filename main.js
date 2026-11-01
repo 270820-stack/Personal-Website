@@ -1,4 +1,186 @@
 const works = {
+  "cardboard": {
+    "kicker": "sculpture",
+    "title": "Cardboard Sculpture",
+    "body": "A cardboard creature brought into three dimensions.",
+    "images": [
+        [
+            "assets/other/cardboard.jpg",
+            "A cardboard creature sculpture worn over the head"
+        ]
+    ]
+},
+  "cat-figure": {
+    "kicker": "artwork",
+    "title": "Cat and Figure",
+    "body": "A dark composition pairing a black cat with a cloaked figure.",
+    "images": [
+        [
+            "assets/other/cat-figure.jpg",
+            "A black cat towering over a cloaked figure"
+        ]
+    ]
+},
+  "earth": {
+    "kicker": "artwork",
+    "title": "大地",
+    "body": "A colorful stag set against a layered urban landscape.",
+    "images": [
+        [
+            "assets/other/earth.jpg",
+            "A brightly colored stag against a cityscape"
+        ]
+    ]
+},
+  "prosperity": {
+    "kicker": "painting",
+    "title": "Where Prosperity Flows",
+    "body": "Koi and the city, brought together in a layered composition.",
+    "images": [
+        [
+            "assets/other/prosperity.jpg",
+            "Red and white koi swimming through a teal cityscape"
+        ]
+    ]
+},
+  "bridge": {
+    "kicker": "poster design",
+    "title": "Bridge Over Troubled Water",
+    "body": "A typographic poster built around flowing lines, reflections, and a lotus.",
+    "images": [
+        [
+            "assets/other/bridge.jpg",
+            "Typographic Bridge Over Troubled Water poster with a lotus and rippling reflections"
+        ]
+    ]
+},
+  "horse": {
+    "kicker": "poster design",
+    "title": "Year of the Horse",
+    "body": "A Lunar New Year poster combining a stylized horse, auspicious lettering, and a gold coin.",
+    "images": [
+        [
+            "assets/other/horse.jpg",
+            "Year of the Horse poster with a stylized horse and a gold coin"
+        ]
+    ]
+},
+  "chuan-cover": {
+    "kicker": "magazine design · 2",
+    "title": "Chuan Long",
+    "body": "Two related magazine designs for Chuan Long, 2025–2026.",
+    "images": [
+        [
+            "assets/other/chuan-cover.jpg",
+            "Chuan Long magazine cover with red waves, a green vase, and white orchids"
+        ],
+        [
+            "assets/other/chuan-second.jpg",
+            "Chuan Long design with black calligraphy and a green vase on red"
+        ]
+    ]
+},
+  "zao": {
+    "kicker": "Graphic design · 13 pages",
+    "title": "ZAO Snowboards",
+    "body": "A snowboard brand identity, including logos, product designs, and advertising.",
+    "images": [
+        [
+            "assets/other/zao-01.jpg",
+            "ZAO Snowboards, page 1 of 13"
+        ],
+        [
+            "assets/other/zao-02.jpg",
+            "ZAO Snowboards, page 2 of 13"
+        ],
+        [
+            "assets/other/zao-03.jpg",
+            "ZAO Snowboards, page 3 of 13"
+        ],
+        [
+            "assets/other/zao-04.jpg",
+            "ZAO Snowboards, page 4 of 13"
+        ],
+        [
+            "assets/other/zao-05.jpg",
+            "ZAO Snowboards, page 5 of 13"
+        ],
+        [
+            "assets/other/zao-06.jpg",
+            "ZAO Snowboards, page 6 of 13"
+        ],
+        [
+            "assets/other/zao-07.jpg",
+            "ZAO Snowboards, page 7 of 13"
+        ],
+        [
+            "assets/other/zao-08.jpg",
+            "ZAO Snowboards, page 8 of 13"
+        ],
+        [
+            "assets/other/zao-09.jpg",
+            "ZAO Snowboards, page 9 of 13"
+        ],
+        [
+            "assets/other/zao-10.jpg",
+            "ZAO Snowboards, page 10 of 13"
+        ],
+        [
+            "assets/other/zao-11.jpg",
+            "ZAO Snowboards, page 11 of 13"
+        ],
+        [
+            "assets/other/zao-12.jpg",
+            "ZAO Snowboards, page 12 of 13"
+        ],
+        [
+            "assets/other/zao-13.jpg",
+            "ZAO Snowboards, page 13 of 13"
+        ]
+    ],
+    "link": "assets/other/zao.pdf"
+},
+  "myzine": {
+    "kicker": "Graphic design · 8 pages",
+    "title": "MYZINE",
+    "body": "A chess-themed editorial design project exploring typography, imagery, and page layouts.",
+    "images": [
+        [
+            "assets/other/myzine-01.jpg",
+            "MYZINE, page 1 of 8"
+        ],
+        [
+            "assets/other/myzine-02.jpg",
+            "MYZINE, page 2 of 8"
+        ],
+        [
+            "assets/other/myzine-03.jpg",
+            "MYZINE, page 3 of 8"
+        ],
+        [
+            "assets/other/myzine-04.jpg",
+            "MYZINE, page 4 of 8"
+        ],
+        [
+            "assets/other/myzine-05.jpg",
+            "MYZINE, page 5 of 8"
+        ],
+        [
+            "assets/other/myzine-06.jpg",
+            "MYZINE, page 6 of 8"
+        ],
+        [
+            "assets/other/myzine-07.jpg",
+            "MYZINE, page 7 of 8"
+        ],
+        [
+            "assets/other/myzine-08.jpg",
+            "MYZINE, page 8 of 8"
+        ]
+    ],
+    "link": "assets/other/myzine.pdf"
+},
+
   memory: {
     kicker: "Memory Project & Adream Foundation",
     title: "A classroom, and fifteen portraits.",
@@ -14,6 +196,7 @@ const works = {
     images: [
       ["assets/works/forum-1.jpg", "Youth delegates gathered at the UN High-Level Political Forum"],
       ["assets/works/forum-2.jpg", "A session at the UN High-Level Political Forum"],
+      ["assets/works/forum-8826.jpg", "With fellow delegates at the UN High-Level Political Forum"],
     ],
   },
   goldstone: {
