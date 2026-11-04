@@ -1060,9 +1060,25 @@ a[href^="mailto:"]:focus-visible {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.gallery--other {
+  align-items: start;
+}
+
 .gallery--other .tile__media {
+  width: 100%;
+  max-width: 12rem;
+  height: auto;
   aspect-ratio: auto;
-  height: clamp(8.5rem, 14vw, 12rem);
+  background: transparent;
+}
+
+.gallery--other .tile__media img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery--other .tile:hover .tile__media img {
+  transform: none;
 }
 
 .gallery--hobbies {
