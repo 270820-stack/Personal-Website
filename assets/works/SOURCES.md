@@ -46,3 +46,14 @@ The Journey gallery also includes `IMG_3629.JPG` from Downloads, verified to car
 - `../other/zao.pdf` and `myzine.pdf`: unchanged copies of the attached `ZAO SNOWBOARDS FINAL.pdf` (13 pages) and `MYZINE.pdf` (8 pages). JPEG page previews and thumbnails accompany both; the complete PDFs are linked from their detail views.
 
 Other works uses descriptive display labels where the owner did not provide a title. Choir was added as a hobby with a typographic music symbol; no unprovided performance details were added.
+
+## Other works additions — November 4, 2026
+
+Four owner-supplied screenshots dated January 26, 2026 were added as optimized images and thumbnails:
+
+- `rain-city.jpg`: 11.24.47 PM, titled “To the City in the Rain”.
+- `house.jpg`: 11.24.40 PM, titled “House”.
+- `other-selfportrait.jpg`: 11.23.46 PM, titled “Self portrait”.
+- `sunset-new-york.jpg`: 11.23.37 PM, titled “Sunset in New York”.
+
+Other works is divided into Painting (including prints) and Graphic design (including illustration and sculptural design). All thirteen works retain their detail views; grid previews use a smaller shared height.

@@ -1,4 +1,49 @@
 const works = {
+  "rain-city": {
+    "kicker": "painting",
+    "title": "To the City in the Rain",
+    "body": "A city street seen through rain, with lights dissolving into blue and violet.",
+    "images": [
+        [
+            "assets/other/rain-city.jpg",
+            "A rainy city street in blue and violet with glowing lights"
+        ]
+    ]
+},
+  "house": {
+    "kicker": "painting",
+    "title": "House",
+    "body": "A house framed by foliage, shadows, and a wooden railing.",
+    "images": [
+        [
+            "assets/other/house.jpg",
+            "A house framed by dark trees and a wooden railing"
+        ]
+    ]
+},
+  "other-selfportrait": {
+    "kicker": "print",
+    "title": "Self portrait",
+    "body": "A self portrait combining bold pink forms, patterned textures, and newspaper.",
+    "images": [
+        [
+            "assets/other/other-selfportrait.jpg",
+            "A pink self portrait layered with patterned textures and newspaper"
+        ]
+    ]
+},
+  "sunset-new-york": {
+    "kicker": "print",
+    "title": "Sunset in New York",
+    "body": "An urban street scene in warm orange and brown tones.",
+    "images": [
+        [
+            "assets/other/sunset-new-york.jpg",
+            "A New York street scene in warm orange and brown tones"
+        ]
+    ]
+},
+
   "cardboard": {
     "kicker": "sculpture",
     "title": "Cardboard Sculpture",
