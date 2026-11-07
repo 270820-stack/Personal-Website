@@ -444,8 +444,7 @@ body.is-ready .nav {
   gap: 2.5rem 1.25rem;
 }
 
-.gallery--works,
-.gallery--art {
+.gallery--works {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
@@ -465,10 +464,6 @@ body.is-ready .nav {
   overflow: hidden;
   border-radius: 2px;
   background: rgba(127, 127, 127, 0.12);
-}
-
-.gallery--art .tile__media {
-  aspect-ratio: 1;
 }
 
 .gallery--hobbies .tile__media {
@@ -788,8 +783,7 @@ body.is-overlay .nav {
 }
 
 @media (max-width: 1100px) {
-  .gallery--works,
-  .gallery--art {
+  .gallery--works {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -836,7 +830,6 @@ body.is-overlay .nav {
   }
 
   .gallery--works,
-  .gallery--art,
   .gallery--hobbies {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.75rem 0.75rem;
@@ -1056,28 +1049,31 @@ a[href^="mailto:"]:focus-visible {
   margin-bottom: 5vh;
 }
 
-.gallery--other {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+/* The widest artwork is just over twice as wide as it is tall. */
+:is(.gallery--art, .gallery--other) {
+  --artwork-height: min(16rem, calc((100vw - 2 * var(--pad)) / 2.05));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.gallery--other {
-  align-items: start;
+:is(.gallery--art, .gallery--other) .tile {
+  width: min-content;
+  overflow-wrap: anywhere;
 }
 
-.gallery--other .tile__media {
-  width: 100%;
-  max-width: 12rem;
-  height: auto;
+:is(.gallery--art, .gallery--other) .tile__media {
   aspect-ratio: auto;
   background: transparent;
 }
 
-.gallery--other .tile__media img {
-  width: 100%;
-  height: auto;
+:is(.gallery--art, .gallery--other) .tile__media img {
+  width: auto;
+  height: var(--artwork-height);
+  object-fit: contain;
 }
 
-.gallery--other .tile:hover .tile__media img {
+:is(.gallery--art, .gallery--other) .tile:hover .tile__media img {
   transform: none;
 }
 
@@ -1094,14 +1090,7 @@ a[href^="mailto:"]:focus-visible {
   font-size: clamp(4rem, 9vw, 9rem);
 }
 
-@media (max-width: 1100px) {
-  .gallery--other {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 900px) {
-  .gallery--other,
   .gallery--hobbies {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
